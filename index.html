@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResponsiveWeb</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img class="logo" src="https://clipground.com/images/logos-png-8.png" alt="logo">
+        <h2>StyleWeb</h2>
+        <ul id="menu-links">
+            <li>Home</li>
+            <li>Services</li>
+            <li>Projects</li>
+            <li>About Us</li>
+        </ul>
+        <button class="nav-button">Get started <img src="https://th.bing.com/th/id/OIP.R6xs6Z-1oRdgH7x1GBel1AHaHa?rs=1&pid=ImgDetMain" alt="arrow"/></button>
+        <img class="menu-icon" src="https://www.svgrepo.com/show/78308/centered-text-of-alignment-button.svg" alt="" onclick="toogleMenu()">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h1><span>WEB</span><br><span>STYLES</span></h1>
+            <div class="button-container">
+                <button class="btn-dark">Request call back <img src="https://images.vexels.com/media/users/3/204667/isolated/preview/0be285c89368fd2d7b0499db071963ef-call-blue-icon-by-vexels.png"/> </button>
+                <button class="btn-light">Know more <img src="https://th.bing.com/th/id/R.57a2707b7be382fb374b001f27050e32?rik=6MPGv7SaYWwexg&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fKTj%2fpxL%2fKTjpxLXbc.png&ehk=CwfKrOy8tEZWgvhduE8QvmeB14buPmTz4GjnwYgs014%3d&risl=&pid=ImgRaw&r=0"/></button>
+            </div>
+        </div>
+        <p>A Decent UI/UX designers with no experience..</p>
+        <img class="user-img" src="https://th.bing.com/th/id/R.21a4e63fda5e1837930ba49675e9ca2e?rik=kZqt1U%2fvePuXiA&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fboy-transparent-background%2fboy-transparent-background-20.png&ehk=LUBdDQwVzuZpz5y3yWdsJ%2fVUVM%2bGKwlDX%2fitb2KXowE%3d&risl=&pid=ImgRaw&r=0" alt="">
+    </header>
+    <script>
+        let navbar = document.querySelector('nav');
+        let menuLink = document.getElementById('menu-links');
+        function toogleMenu(){
+            menuLink.classList.toggle('show-menu')
+        }
+        window.onscroll = ()=>{
+            if(window.scrollY>0){
+                navbar.style.background='#eefff9'
+            }
+            else{
+                navbar.style.background='transparent'
+            }
+        }
+    </script>
+</body>
+</html>
